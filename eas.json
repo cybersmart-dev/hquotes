@@ -1,0 +1,14 @@
+{
+    "build": {
+        "preview": {
+            "android": {
+                "buildType": "apk",
+                "developmentClient": false
+            }
+        },
+        "production": {}
+    },
+    "cli": {
+        "version": ">= 0.52.0"
+    }
+}

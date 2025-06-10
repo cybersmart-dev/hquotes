@@ -1,0 +1,49 @@
+{
+    "expo": {
+        "name": "HQuotes",
+        "slug": "hquotes",
+        "scheme": "hquotes",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "newArchEnabled": true,
+        "splash": {
+            "image": "./assets/quotes/q_bukata.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/quotes/q_bukata.png",
+                "backgroundColor": "#ffffff"
+            },
+             "jsEngine": "hermes",
+            "edgeToEdgeEnabled": true,
+            "package": "com.nttec.hquotes"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-build-properties",
+                {
+                    "android": {
+                        "enableProguardInReleaseBuilds": true
+                    }
+                }
+            ]
+        ],
+        "extra": {
+            "router": {},
+            "eas": {
+                "projectId": "5cdd00ed-7086-45c2-bb60-38cd7d1952a9"
+            }
+        }
+    }
+}
