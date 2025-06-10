@@ -18,10 +18,10 @@ import { IconButton, Button, useTheme } from "react-native-paper";
 
 const Bookmark = () => {
     const navigation = useNavigation();
-    const [refresh, setRefresh] = useState(1)
+    const [refresh, setRefresh] = useState(1);
     const [data, setData] = useState([]);
     const [sData, setSData] = useState([]);
-    const theme = useTheme()
+    const theme = useTheme();
     const recreate = () => {
         setRefresh(prev => prev + 1);
     };
@@ -73,7 +73,7 @@ const Bookmark = () => {
     );
     const remove = async () => {};
     const handleLongPress = (cid: Number, qid: Number) => {
-        const ndata = []
+        const ndata = [];
         Alert.alert(
             "Remove from bookmark",
             `Do you want to remove this quote from bookmark?`,
@@ -84,7 +84,7 @@ const Bookmark = () => {
                     onPress: async () => {
                         sData.forEach(item => {
                             if (item.id == cid && item.qid == qid) {
-                                return
+                                return;
                             }
                             ndata.push(item);
                         });
@@ -115,7 +115,11 @@ const Bookmark = () => {
         //console.debug(id, qid);
     };
     return (
-        <View style={{ backgroundColor: theme.colors.background}} key={refresh} className="mb-5 flex-1" >
+        <View
+            style={{ backgroundColor: theme.colors.background }}
+            key={refresh}
+            className="mb-5 flex-1 h-screen"
+        >
             <FlatList
                 data={data}
                 renderItem={({ item }) => (
@@ -131,13 +135,12 @@ const Bookmark = () => {
                 keyExtractor={(item, index) => index.toString()}
                 showsVerticalScrollIndicator={false}
                 ListEmptyComponent={() => (
-                    <View className="items-center h-[75vh] justify-center">
-                        <IconButton
-                            
-                            size={80}
-                            icon={"book-cancel"}
-                        />
-                        <Text style={{color:theme.colors.title}} className="text-[20px] font-light">
+                    <View className="items-center h-screen flex-1 justify-center">
+                        <IconButton size={80} icon={"book-cancel"} />
+                        <Text
+                            style={{ color: theme.colors.title }}
+                            className="text-[20px] font-light"
+                        >
                             Empty Bookmark
                         </Text>
                     </View>

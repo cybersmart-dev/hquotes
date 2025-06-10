@@ -9,7 +9,7 @@ function PaperDrawer(props: DrawerContentComponentProps) {
     const theme = useTheme()
     
     return (
-        <Drawer.Section theme={theme}  style={{backgroundColor:theme.colors.background}}>
+        <Drawer.Section theme={theme}  style={{backgroundColor:theme.colors.background, flex: 1,}}>
             <ImageBackground blurRadius={10} resizeMode="stretch" source={require('../assets/quotes/q_bukata.png')} className="p-14 mb-5 items-center justify-center font-bold bg-amber-700">
                 <Text className="text-white text-2xl font-bold">HQuotes</Text>
                 <Text className="text-white">Hausa Quotes</Text>

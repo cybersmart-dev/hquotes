@@ -14,7 +14,7 @@ const Privacy = () => {
         webViewRef?.current.reload();
         webViewRef?.current.clearHistory();
     };
-    
+
     useEffect(() => {
         navigation.setOptions({
             headerLeft: () => (
@@ -47,7 +47,7 @@ const Privacy = () => {
                 renderLoading={() => (
                     <View
                         style={{ backgroundColor: theme.colors.background }}
-                        className="absolute bg-white w-screen h-[75vh] justify-center items-center flex-1"
+                        className="absolute bg-white w-screen h-screen justify-center items-center flex-1"
                     >
                         <ActivityIndicator size={50} />
                         <Text
@@ -67,7 +67,7 @@ const Privacy = () => {
                 renderError={errorName => (
                     <View
                         style={{ backgroundColor: theme.colors.background }}
-                        className="items-center flex-1 absolute h-[75vh] w-screen justify-center"
+                        className="items-center flex-1 absolute h-screen w-screen justify-center"
                     >
                         <IconButton size={90} icon="connection" />
                         <Text
