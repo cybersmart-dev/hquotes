@@ -17,11 +17,12 @@
             "supportsTablet": true
         },
         "android": {
+            "jsEngine": "hermes",
             "adaptiveIcon": {
                 "foregroundImage": "./assets/quotes/q_bukata.png",
                 "backgroundColor": "#ffffff"
             },
-             "jsEngine": "hermes",
+
             "edgeToEdgeEnabled": true,
             "package": "com.nttec.hquotes"
         },
@@ -29,7 +30,6 @@
             "favicon": "./assets/favicon.png"
         },
         "plugins": [
-            "expo-router",
             [
                 "expo-build-properties",
                 {
@@ -37,7 +37,8 @@
                         "enableProguardInReleaseBuilds": true
                     }
                 }
-            ]
+            ],
+            "expo-router"
         ],
         "extra": {
             "router": {},
