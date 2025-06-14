@@ -20,7 +20,7 @@ const About = () => {
     return (
         <View style={{ backgroundColor: theme.colors.background}} className="flex-1 items-center pt-5">
             <View className="justify-center items-center">
-              <Image className="rounded-full w-20 h-20" source={require("../assets/quotes/q_bukata.png")} />
+              <Image className="rounded-full w-20 h-20" source={require("../assets/icon.png")} />
               <Text style={{ color: theme.colors.title}} className="font-light text-[20px] mt-2">HQuotes</Text>
               <Text style={{ color: theme.colors.title}} className="font-light">Developer: <Text className="font-bold">Cybersmart</Text></Text>
             </View>

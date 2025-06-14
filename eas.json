@@ -1,20 +1,19 @@
 {
-    "build": {
-        "production": {
-            "channel": "production",
-            "autoIncrement": true,
-            "android": {
-                "buildType": "apk",
-                "developmentClient": false,
-                "image": "latest"
-            }
-        }
-    },
-    "cli": {
-        "version": ">= 12.5.0",
-        "appVersionSource": "remote"
-    },
-      "submit": {
+  "cli": {
+    "version": ">= 12.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "channel": "production",
+      "autoIncrement": true,
+      "android": {
+        "image": "latest",
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
     "production": {}
   }
 }

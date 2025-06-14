@@ -1,34 +1,37 @@
-# Node modules and package lock (these are reinstalled during build)
-node_modules
-package-lock.json
-yarn.lock
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Git files
-.git
-.gitignore
+# dependencies
+node_modules/
 
-# OS/System files
-.DS_Store
-Thumbs.db
-
-# Tests
-__tests__/
-*.test.js
-
-# IDE/Editor configs
-.vscode/
-.idea/
-
-# Local environment files
-.env
-.env.local
-.env.*.local
-
-# Output folders
+# Expo
+.expo/
 dist/
-build/
 web-build/
+expo-env.d.ts
 
-# Logs
-npm-debug.log
-yarn-error.log
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo

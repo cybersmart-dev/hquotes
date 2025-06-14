@@ -22,7 +22,7 @@ import {
 import { useFocusEffect } from "@react-navigation/native";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Categories } from "../../Utils/Quets";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import {
     IconButton,
     Dialog,
@@ -234,6 +234,7 @@ const q = () => {
     );
 
     return (
+        
         <ImageBackground
             className="flex-1 pb-5"
             blurRadius={0}

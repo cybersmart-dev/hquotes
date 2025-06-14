@@ -8,6 +8,7 @@ import {
     MD3LightTheme,
     MD3DarkTheme
 } from "react-native-safe-area-context";
+import { StatusBar } from "expo-status-bar";
 import { LightScheme, DarkScheme } from "../Themes/ThemeSchemes";
 import { useColorScheme, View } from "react-native";
 
@@ -86,9 +87,10 @@ export default function Layout() {
                             headerTitle: "View".toUpperCase(),
                             headerShown: true,
                             swipeEnabled: false
-                        }}
+                        }} 
                     />
                 </Drawer>
+                <StatusBar style={colorScheme == "dark" ? "light" : "dark"} />
             </PaperProvider>
         </SafeAreaProvider>
     );
