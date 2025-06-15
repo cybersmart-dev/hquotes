@@ -3,7 +3,7 @@
         "name": "HQuotes",
         "slug": "hquotes",
         "scheme": "hquotes",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "userInterfaceStyle": "automatic",
@@ -33,7 +33,9 @@
                 "expo-build-properties",
                 {
                     "android": {
-                        "enableProguardInReleaseBuilds": true
+                                    "enableProguardInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "useLegacyPackaging": true
                     }
                 }
             ],
